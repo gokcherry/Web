@@ -3,6 +3,50 @@ body {
   }
   
   h1 {
-    color: navy;
-    margin-left: 20px;
+    color: rgb(183, 138, 245);
+    text-align: center;
   }
+  h2{
+    color: #4f248a;
+    text-align: center;
+  }
+  p {
+    color: rgb(89, 72, 113);
+    text-align: center;
+  }
+#box1{
+  border: 10px solid ;
+  border-color: blueviolet;
+  border-radius: 10px;
+  margin: 0 auto;
+}
+#box2{
+  border: 10px solid ;
+  border-color: rgb(193, 163, 222);
+  border-radius: 10px;
+  margin: 0 auto;
+}
+#div-1{
+  width: 33.33%;
+  float:right;
+}
+#div-2{
+  width: 33.33%;
+  float:left;
+}
+#div-3{
+  width: 33.33%;
+  margin: 0 auto;
+}
+
+#baslık1{
+  border: 10px solid ;
+  border-color: rgb(212, 196, 227);
+  width: 90%;
+  border-radius: 10px;
+  margin: 0 auto;
+}
+
+#form1{
+  margin: 0 auto;
+}
