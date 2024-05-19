@@ -7,45 +7,124 @@
 
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="style.css">
-        
-        <!-- <script src="Script.js"></script> -->
+        <link rel="stylesheet" href="css/style.css">
     </head>
-    <body> 
-         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container-fluid justify-content-center">
-              <a class="navbar-brand" href="index.html">Hakkımda</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav text-center">
-                  <li class="nav-item">
-                    <a class="nav-link" href="egitimhayatım.html">Eğitim Hayatım</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="ilgialanlarım.html">İlgi Alanlarım</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="index.html" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Şehrim
-                    </a>
-                    <ul class="dropdown-menu text-center" aria-labelledby="navbarDropdownMenuLink">
-                      <li><a class="dropdown-item" aria-current="page"  href="malatya.html">Malatya</a></li>
-                      <li><a class="dropdown-item" href="mirasımız.html">Mirasımız</a></li>
-                    </ul>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="iletisim.html">İletişim</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="login.html">Login</a>
-                  </li>
+    <body>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container justify-content-center">
+          <a class="navbar-brand" href="index.html">Hakkımda</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse flex-grow-0"  id="navbarSupportedContent">
+            <ul class="navbar-nav text-center">
+              <li class="nav-item">
+                <a class="nav-link" href="egitimhayatım.html">Eğitim Hayatım</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="ilgialanlarım.html">İlgi Alanım</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="index.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                 Şehrim
+                </a>
+                <ul class="dropdown-menu text-center">
+                  <li><a class="dropdown-item" href="malatya.html" aria-current="page">Malatya</a></li>
+                  <li><a class="dropdown-item" href="mirasımız.html">Mirasımız</a></li>
                 </ul>
-              </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="iletisim.html">İletişim</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="login.html">Login</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <br>
+      <br>
+      <br>
+      <div class="container">
+        <div class="slider">
+            <div class="slide">
+               <a href="#kayısı"><img src="img/Kayısı.jpg" alt="Kayısı">Kayısı</a>
             </div>
-          </nav>
+            <div class="slide">
+              <a href="#levent"> <img src="img/Levent-Vadisi-ve-Seyir-Terasi.jpg" alt="Levent Vadisi ve Seyir Terası">Levent Vadisi ve Seyir Terası </a>
+            </div>
+            <div class="slide">
+              <a href="#malatya"> <img src="img/Malatya.jpg" alt="Malatya">Malatya</a>
+            </div>
+            <div class="slide">
+              <a href="#zengibar"> <img src="img/Zengibar-Kalesi.jpg" alt="Zengibar Kalesi">Zengibar Kalesi</a>
+            </div>
+            <div class="slide">
+              <a href="#kayısı"><img src="img/Kayısı.jpg" alt="Kayısı">Kayısı</a>
+            </div>
+        </div>
+      </div>
+      <div class="container mt-5">
+        <div class="card">
+          <div class="card-body">
+            <h2 class="card-title text-center" id="malatya">Malatya</h2>
+            <p class="card-text">
+              <b>Malatya,</b> Türkiye'nin Doğu Anadolu Bölgesi'nde yer alan, tarihi ve kültürel zenginlikleriyle öne çıkan bir şehirdir.
+              Malatya, kayısılarıyla dünya çapında ün kazanmış olup, tarihi dokusu ve doğal güzellikleriyle de dikkat çekmektedir.
+            </p>
 
-         
+            <h3 class="mt-4">Tarihi ve Kültürel Zenginlikler</h3>
+            <p>
+              <b>Malatya,</b> tarih boyunca birçok medeniyete ev sahipliği yapmış, köklü bir geçmişe sahiptir.
+              İlk yerleşim izleri Neolitik döneme kadar uzanır ve şehir, Hititler, Asurlular, Persler, Romalılar, Bizanslılar, Selçuklular ve Osmanlılar gibi birçok büyük medeniyetin egemenliğinde kalmıştır.
+              Bu zengin tarihi miras, Malatya'da görülebilecek birçok arkeolojik kalıntı ve tarihi yapı ile kendini gösterir.
+            </p>
+
+            <p>
+              <b>Arslantepe Höyüğü,</b> UNESCO Dünya Mirası Listesi'nde yer almakta olup, tarihin ilk şehir devletlerinden biri olarak kabul edilmektedir. 
+              Höyükte yapılan kazılarda ortaya çıkarılan saray, tapınak ve şehir surları, tarihin derinliklerine ışık tutar.
+            </p>
+
+            <h3 class="mt-4">Doğal Güzellikler ve Gezi Rotaları</h3>
+            <p>
+              <b>Malatya,</b> sadece tarihi değil, aynı zamanda doğal güzellikleriyle de ziyaretçilerini büyüler. Şehir, Fırat Nehri'nin bereketli topraklarında yer almakta ve bu durum, bölgenin tarımsal zenginliğine büyük katkı sağlamaktadır.
+            </p>
+
+            <p id="levent">
+              <b>Levent Vadisi,</b> doğa yürüyüşleri ve dağcılık için ideal bir yerdir. Vadinin yüksek kayalıkları ve derin kanyonları, muhteşem manzaralar sunar. 
+              Ayrıca, bu vadide yer alan Levent Seyir Terası, Fırat Nehri ve çevresindeki doğa harikalarını kuşbakışı izleme imkanı sunar.
+            </p>
+
+            <p>
+              <b>Karahan Tepe,</b> doğa tutkunları için bir başka cazibe merkezidir. Burası, özellikle ilkbahar ve yaz aylarında ziyaretçilerine yemyeşil manzaralar ve serin yürüyüş yolları sunar.
+            </p>
+            <p id="zengibar">
+              <b>Zengibar Kalesi,</b> Malatya'nın Darende ilçesinde, yüksek bir tepe üzerinde yer alan tarihi bir kaledir. 
+              Romalılar, Bizanslılar ve Selçuklular tarafından kullanılan kale, stratejik konumu ve muhteşem manzarasıyla dikkat çeker.
+              Kalede bulunan surlar, gözetleme kuleleri ve sarnıçlar, ziyaretçilere geçmişin izlerini sunar.
+              Zengibar Kalesi, tarih ve doğa meraklıları için eşsiz bir destinasyondur.
+            </p>
+
+            <h3 class="mt-4" id="kayısı" >Kayısının Başkenti</h3>
+            <p>
+              <b>Malatya,</b> dünya kayısı üretiminin başkentidir. Şehir, hem lezzeti hem de kalitesiyle ünlü Malatya kayısısının ana vatanıdır. 
+              Her yıl düzenlenen Kayısı Festivali, yerel halkın ve ziyaretçilerin büyük ilgisini çeker. Festival boyunca düzenlenen etkinlikler, konserler ve yarışmalar, şehre ayrı bir canlılık katar.
+            </p>
+
+            <h3 class="mt-4">Yerel Lezzetler</h3>
+            <p>
+              <b>Malatya mutfağı,</b> ve çeşitli yemekleriyle bilinir. Yörenin meşhur yemekleri arasında Kağıt Kebabı, Analı Kızlı Çorbası, Gırık, Kömbe ve Pestil sayılabilir. 
+              Ayrıca, Malatya'da yapılan kayısı reçelleri, pestil ve cevizli sucuk gibi tatlılar da oldukça meşhurdur.
+            </p>
+
+            <h3 class="mt-4">Misafirperver İnsanlar</h3>
+            <p>
+              <b>Malatya halkı,</b> misafirperverliği ve sıcak kanlılığı ile bilinir. Şehri ziyaret edenler, burada kendilerini evlerinde gibi hissederler. 
+              Yerel halkın güler yüzü ve samimi sohbetleri, ziyaretçilerin unutamayacakları anılar biriktirmelerine vesile olur.
+            </p>
+          </div>
+        </div>
+      </div>
     </body>
 </html>

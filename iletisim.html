@@ -1,50 +1,250 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Gökçe Çiçek Yağmur</title>
 
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="style.css">
-        
-        <!-- <script src="Script.js"></script> -->
-    </head>
-    <body> 
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container-fluid justify-content-center">
-              <a class="navbar-brand" href="index.html">Hakkımda</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>İletişim</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container justify-content-center">
+            <a class="navbar-brand" href="index.html">Hakkımda</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            </button>
+            <div class="collapse navbar-collapse flex-grow-0" id="navbarSupportedContent">
                 <ul class="navbar-nav text-center">
-                  <li class="nav-item">
-                    <a class="nav-link" href="egitimhayatım.html">Eğitim Hayatım</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="ilgialanlarım.html">İlgi Alanlarım</a>
-                  </li>
-                  
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="index.html" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Şehrim
-                    </a>
-                    <ul class="dropdown-menu text-center" aria-labelledby="navbarDropdownMenuLink">
-                      <li><a class="dropdown-item" href="malatya.html">Malatya</a></li>
-                      <li><a class="dropdown-item" href="mirasımız.html">Mirasımız</a></li>
-                    </ul>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="iletisim.html">İletişim</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="login.html">Login</a>
-                  </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="egitimhayatım.html">Eğitim Hayatım</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="ilgialanlarım.html">İlgi Alanım</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="index.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Şehrim
+                        </a>
+                        <ul class="dropdown-menu text-center">
+                            <li><a class="dropdown-item" href="malatya.html">Malatya</a></li>
+                            <li><a class="dropdown-item" href="mirasımız.html">Mirasımız</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="iletisim.html" aria-current="page">İletişim</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">Login</a>
+                    </li>
                 </ul>
-              </div>
             </div>
-          </nav>
-    </body>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center">
+                <br>
+                <h1>İletişim</h1>
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                <form action="php/gonder.php" method="post">
+                    <div class="form-group">
+                        <label for="adi">İsim:</label>
+                        <input type="text" name="adi" class="form-control" placeholder="İsim Giriniz." required autofocus>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="soyadi">Soy isim:</label>
+                        <input type="text" name="soyadi" class="form-control" placeholder="Soy İsim Giriniz." required>
+                    </div>
+                    <div class="form-group">
+                        <label>Cinsiyet:</label>
+                        <br>
+                        <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                            <label class="btn btn-secondary active">
+                            <input type="radio" name="cinsiyet" value="Erkek" checked>Erkek</label>
+                            <label class="btn btn-secondary">
+                            <input type="radio" name="cinsiyet" value="Kadın">Kadın</label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="telefon">Telefon:</label>
+                        <input type="tel" name="telefon" class="form-control" placeholder="Telefon numarası giriniz..." required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Mail:</label>
+                        <input type="email" name="email" class="form-control" placeholder="Mail Adresi giriniz...">
+                    </div>
+                    <div class="form-group">
+                        <label>Şehir Seçimi:</label><br>
+                        <select name="il" class="form-control">
+                            <option value="">Şehir seçiniz.</option>
+                            <option value="Adana">Adana</option>
+                            <option value="Adıyaman">Adıyaman</option>
+                            <option value="Afyonkarahisar">Afyonkarahisar</option>
+                            <option value="Ağrı">Ağrı</option>
+                            <option value="Aksaray">Aksaray</option>
+                            <option value="Amasya">Amasya</option>
+                            <option value="Ankara">Ankara</option>
+                            <option value="Antalya">Antalya</option>
+                            <option value="Ardahan">Ardahan</option>
+                            <option value="Artvin">Artvin</option>
+                            <option value="Aydın">Aydın</option>
+                            <option value="Balıkesir">Balıkesir</option>
+                            <option value="Bartın">Bartın</option>
+                            <option value="Batman">Batman</option>
+                            <option value="Bayburt">Bayburt</option>
+                            <option value="Bilecik">Bilecik</option>
+                            <option value="Bingöl">Bingöl</option>
+                            <option value="Bitlis">Bitlis</option>
+                            <option value="Bolu">Bolu</option>
+                            <option value="Burdur">Burdur</option>
+                            <option value="Bursa">Bursa</option>
+                            <option value="Çanakkale">Çanakkale</option>
+                            <option value="Çankırı">Çankırı</option>
+                            <option value="Çorum">Çorum</option>
+                            <option value="Denizli">Denizli</option>
+                            <option value="Diyarbakır">Diyarbakır</option>
+                            <option value="Düzce">Düzce</option>
+                            <option value="Edirne">Edirne</option>
+                            <option value="Elazığ">Elazığ</option>
+                            <option value="Erzincan">Erzincan</option>
+                            <option value="Erzurum">Erzurum</option>
+                            <option value="Eskişehir">Eskişehir</option>
+                            <option value="Gaziantep">Gaziantep</option>
+                            <option value="Giresun">Giresun</option>
+                            <option value="Gümüşhane">Gümüşhane</option>
+                            <option value="Hakkâri">Hakkâri</option>
+                            <option value="Hatay">Hatay</option>
+                            <option value="Iğdır">Iğdır</option>
+                            <option value="Isparta">Isparta</option>
+                            <option value="İzmir">İzmir</option>
+                            <option value="İstanbul">İstanbul</option>
+                            <option value="Kahramanmaraş">Kahramanmaraş</option>
+                            <option value="Karabük">Karabük</option>
+                            <option value="Karaman">Karaman</option>
+                            <option value="Kars">Kars</option>
+                            <option value="Kastamonu">Kastamonu</option>
+                            <option value="Kayseri">Kayseri</option>
+                            <option value="Kırıkkale">Kırıkkale</option>
+                            <option value="Kırklareli">Kırklareli</option>
+                            <option value="Kırşehir">Kırşehir</option>
+                            <option value="Kilis">Kilis</option>
+                            <option value="Kocaeli">Kocaeli</option>
+                            <option value="Konya">Konya</option>
+                            <option value="Kütahya">Kütahya</option>
+                            <option value="Malatya">Malatya</option>
+                            <option value="Manisa">Manisa</option>
+                            <option value="Mardin">Mardin</option>
+                            <option value="Mersin">Mersin</option>
+                            <option value="Muğla">Muğla</option>
+                            <option value="Muş">Muş</option>
+                            <option value="Nevşehir">Nevşehir</option>
+                            <option value="Niğde">Niğde</option>
+                            <option value="Ordu">Ordu</option>
+                            <option value="Osmaniye">Osmaniye</option>
+                            <option value="Rize">Rize</option>
+                            <option value="Sakarya">Sakarya</option>
+                            <option value="Samsun">Samsun</option>
+                            <option value="Siirt">Siirt</option>
+                            <option value="Sinop">Sinop</option>
+                            <option value="Sivas">Sivas</option>
+                            <option value="Şırnak">Şırnak</option>
+                            <option value="Tekirdağ">Tekirdağ</option>
+                            <option value="Tokat">Tokat</option>
+                            <option value="Trabzon">Trabzon</option>
+                            <option value="Tunceli">Tunceli</option>
+                            <option value="Şanlıurfa">Şanlıurfa</option>
+                            <option value="Uşak">Uşak</option>
+                            <option value="Van">Van</option>
+                            <option value="Yalova">Yalova</option>
+                            <option value="Yozgat">Yozgat</option>
+                            <option value="Zonguldak">Zonguldak</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="adres">Adres:</label>
+                        <textarea name="adres" class="form-control" cols="50" rows="5" placeholder="Adres..." style="resize: none;"></textarea>
+                    </div>
+
+                    <div class="btn text-center">
+                        <input class="btn btn-secondary" type="submit" name="gonder" value="Gönder">
+                    </div>
+                    <div class="btn text-center">
+                        <input class="btn btn-secondary" type="reset" value="Reset">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        new Vue({
+            el: '#app',
+            data: {
+                form: {
+                    adi: '',
+                    soyadi: '',
+                    cinsiyet: '',
+                    telefon: '',
+                    email: '',
+                    il: '',
+                    adres: ''
+                },
+                errors: [],
+                successMessage: ''
+            },
+            methods: {
+                validateForm() {
+                    this.errors = [];
+                    if (!this.form.adi) this.errors.push("İsim gereklidir.");
+                    if (!this.form.soyadi) this.errors.push("Soyad gereklidir.");
+                    if (!this.form.cinsiyet) this.errors.push("Cinsiyet gereklidir.");
+                    if (!this.form.telefon) this.errors.push("Telefon gereklidir.");
+                    if (!this.form.email) this.errors.push("Email gereklidir.");
+                    if (!this.form.il) this.errors.push("Şehir seçiniz.");
+                    if (!this.form.adres) this.errors.push("Adres gereklidir.");
+    
+                    if (!this.errors.length) {
+                        const formData = new FormData();
+                        for (const key in this.form) {
+                            formData.append(key, this.form[key]);
+                        }
+                        fetch('php/gonder.php', {
+                            method: 'POST',
+                            body: formData
+                        })
+                        .then(response => response.text())
+                        .then(message => {
+                            this.successMessage = message;
+                        })
+                        .catch(error => {
+                            console.error('Error:', error);
+                            this.successMessage = 'Form gönderilirken bir hata oluştu.';
+                        });
+                    } else {
+                        this.successMessage = '';
+                    }
+                }
+            }
+        });
+    </script>
+    
+</body>
+
 </html>
